@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { OrderTabsPage } from '../order-tabs/order-tabs';
 
 /**
- * Generated class for the LoginPage page.
+ * Generated class for the MenuPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,22 +10,16 @@ import { OrderTabsPage } from '../order-tabs/order-tabs';
 
 @IonicPage()
 @Component({
-  selector: 'page-login',
-  templateUrl: 'login.html',
+  selector: 'page-menu',
+  templateUrl: 'menu.html',
 })
-export class LoginPage {
+export class MenuPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad LoginPage');
-  }
-
-  login(){
-    //if auth succes, go to home
-    this.navCtrl.setRoot(OrderTabsPage);
-    console.log('Try to login');
+    console.log('ionViewDidLoad MenuPage');
   }
 
 }

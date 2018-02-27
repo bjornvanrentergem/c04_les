@@ -6,9 +6,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 
-import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { StoreDetailPage } from '../pages/store-detail/store-detail';
+import { OrderTabsPage } from '../pages/order-tabs/order-tabs';
 
 import { AuthenticateProvider } from '../providers/authenticate/authenticate';
 import { StoreProvider } from '../providers/store/store';
@@ -16,9 +16,9 @@ import { StoreProvider } from '../providers/store/store';
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
     LoginPage,
-    StoreDetailPage
+    StoreDetailPage,
+    OrderTabsPage
   ],
   imports: [
     BrowserModule,
@@ -27,9 +27,9 @@ import { StoreProvider } from '../providers/store/store';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
     LoginPage,
-    StoreDetailPage
+    StoreDetailPage,
+    OrderTabsPage
   ],
   providers: [
     StatusBar,
